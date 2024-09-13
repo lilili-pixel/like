@@ -180,7 +180,7 @@ int main(void)
 						HAL_GPIO_WritePin(GPIOC,GPIO_PIN_10,GPIO_PIN_SET);//X电机正转
 						HAL_GPIO_WritePin(GPIOC,GPIO_PIN_11,GPIO_PIN_SET);//Y电机正转
 						HAL_TIM_PWM_Start_IT(&htim8,TIM_CHANNEL_1);
-						HAL_TIM_PWM_Start_IT(&htim8,TIM_CHANNEL_2);
+						HAL_TIM_PWM_Start_IT(&htim8,TIM_CHANNEL_2);     
 					}
 				}
 				else if(0x0000 < ERROR_X < 0x0010)
